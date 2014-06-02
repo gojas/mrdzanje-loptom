@@ -75,7 +75,7 @@ var LeftMenuView = Backbone.View.extend({
 //    },
     
     findPeopleAndPlaces: function(){
-        
+        //
         
     },
     

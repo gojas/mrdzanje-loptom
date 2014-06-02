@@ -1,0 +1,44 @@
+diff --git a/index.html b/index.html
+index 841db1a..d288568 100755
+--- a/index.html
++++ b/index.html
+@@ -50,6 +50,13 @@
+     <script src="lib/backbone-min.js"></script>
+     <script src="lib/handlebars.js"></script>
+     
++    <script>
++        //Global Translation... this will be fetched from the server
++        var Translations = {
++            please_sign_in : 'Please sign in'
++        }
++    </script>
++    
+     <!-- views -->
+     <script src="js/view/LeftMenuView.js"></script>
+     <script src="js/view/HeaderView.js"></script>
+diff --git a/js/main.js b/js/main.js
+index 209ad44..8612955 100755
+--- a/js/main.js
++++ b/js/main.js
+@@ -8,7 +8,7 @@ var AppRouter = Backbone.Router.extend({
+     },
+ 
+     initialize:function () {
+-        
++               
+         this.leftMenuView = new LeftMenuView();
+         
+         this.headerView = new HeaderView();
+diff --git a/js/view/HeaderView.js b/js/view/HeaderView.js
+index 159c89a..b75e00b 100644
+--- a/js/view/HeaderView.js
++++ b/js/view/HeaderView.js
+@@ -9,7 +9,7 @@ var HeaderView = Backbone.View.extend({
+         '<div data-role="popup" id="login-popup" data-theme="a" class="ui-corner-all">' + 
+             '<form>' +
+                 '<div style="padding:10px 20px;">' +
+-                    '<h3>Please sign in</h3>' +
++                    '<h3>'+Translations.please_sign_in+'</h3>' +
+                     '<label for="un" class="ui-hidden-accessible">Username:</label>' +
+                     '<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">' +
+                     '<label for="pw" class="ui-hidden-accessible">Password:</label>' +
