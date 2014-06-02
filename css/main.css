@@ -1,0 +1,10 @@
+#leftMenu {
+	background-color: #5a5959;
+	float: left;
+	height: 100%;
+	width: 165px;
+}
+
+.ui-content{
+    padding: 0px;
+}
