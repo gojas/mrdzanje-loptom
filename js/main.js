@@ -8,7 +8,7 @@ var AppRouter = Backbone.Router.extend({
     },
 
     initialize:function () {
-        
+               
         this.leftMenuView = new LeftMenuView();
         
         this.headerView = new HeaderView();

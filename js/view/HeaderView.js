@@ -9,7 +9,7 @@ var HeaderView = Backbone.View.extend({
         '<div data-role="popup" id="login-popup" data-theme="a" class="ui-corner-all">' + 
             '<form>' +
                 '<div style="padding:10px 20px;">' +
-                    '<h3>Please sign in</h3>' +
+                    '<h3>'+Translations.please_sign_in+'</h3>' +
                     '<label for="un" class="ui-hidden-accessible">Username:</label>' +
                     '<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">' +
                     '<label for="pw" class="ui-hidden-accessible">Password:</label>' +
