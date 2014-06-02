@@ -32,7 +32,7 @@ var PlayersView = Backbone.View.extend({
     
     template : Handlebars.compile(
         '<div data-role="content" id="content">' +
-            '<ul data-role="listview" data-theme="a" data-divider-theme="a" class="ui-listview ui-group-theme-a">' +
+            '<ul data-role="listview" data-theme="a" id="players-list" data-divider-theme="a" class="ui-listview ui-group-theme-a">' +
                 
                 '{{#each this}}'+
                     '<li>'+
