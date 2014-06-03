@@ -6,7 +6,7 @@ var HeaderView = Backbone.View.extend({
             '<h1>Milan nindja</h1>' +
             '<a data-rel="popup" id="open-login-popup" data-position-to="window" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-notext" data-transition="pop">Sign in</a>' +
         '</div>' + 
-        '<div data-role="popup" id="login-popup" data-theme="a" class="ui-corner-all">' + 
+        '<div data-role="popup" id="login-popup" data-overlay-theme="b" data-theme="a" class="ui-corner-all">' + 
             '<form>' +
                 '<div style="padding:10px 20px;">' +
                     '<h3>'+Translations.please_sign_in+'</h3>' +
